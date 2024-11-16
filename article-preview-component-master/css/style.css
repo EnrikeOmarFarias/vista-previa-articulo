@@ -1,0 +1,77 @@
+/*------- Globales --------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+
+  --fuente: "Manrope", sans-serif;
+  --sm: 1rem;
+  --md: 1.6rem;
+  --lg: 2.8rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.body__home {
+  font-family: var(--fuente);
+  font-weight: 500;
+  font-style: normal;
+  background-color: var(--GrayishBlue);
+}
+
+.conteiner__grid {
+  display: grid;
+  max-width: 980px;
+  margin: auto;
+  grid-template-columns: 1fr 2fr;
+  height: 80vh;
+  place-content: center;
+}
+
+/*-----------IMG---------------*/
+
+.contenedor__principal figure img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+/*----------PARRAFOS -------------*/
+
+.contenedor__secundario {
+  background-color: var(--LightGrayishBlue);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 3rem 4rem;
+}
+
+.contenedor__secundario--title {
+  font-size: var(--lg);
+  color: var(--VeryDarkGrayishBlue);
+  margin-bottom: 2rem;
+}
+
+.contenedor__secundario--paragraph {
+  font-size: var(--md);
+  color: var(--DesaturatedDarkBlue);
+  margin-bottom: 2rem;
+}
+
+.contenedor__secundario--autor {
+  display: flex;
+}
+
+.contenedor__secundario--autor img {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
