@@ -1,5 +1,7 @@
 /*------- Globales --------*/
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,6 +12,7 @@
   --DesaturatedDarkBlue: hsl(214, 17%, 51%);
   --GrayishBlue: hsl(212, 23%, 69%);
   --LightGrayishBlue: hsl(210, 46%, 95%);
+  --white: #ffffff;
 
   --fuente: "Manrope", sans-serif;
   --sm: 1rem;
@@ -25,7 +28,7 @@ html {
   font-family: var(--fuente);
   font-weight: 500;
   font-style: normal;
-  background-color: var(--GrayishBlue);
+  background-color: var(--LightGrayishBlue);
 }
 
 .conteiner__grid {
@@ -33,14 +36,20 @@ html {
   max-width: 980px;
   margin: auto;
   grid-template-columns: 1fr 2fr;
-  height: 80vh;
+  height: 90vh;
   place-content: center;
 }
 
 /*-----------IMG---------------*/
 
+.contenedor__principal figure {
+  height: 100%;
+}
+
 .contenedor__principal figure img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
@@ -48,7 +57,7 @@ html {
 /*----------PARRAFOS -------------*/
 
 .contenedor__secundario {
-  background-color: var(--LightGrayishBlue);
+  background-color: var(--white);
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding: 3rem 4rem;
@@ -58,6 +67,7 @@ html {
   font-size: var(--lg);
   color: var(--VeryDarkGrayishBlue);
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .contenedor__secundario--paragraph {
@@ -72,6 +82,26 @@ html {
 
 .contenedor__secundario--autor img {
   border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.contenedor__secundario--autor h3 {
+  color: var(--VeryDarkGrayishBlue);
+  font-weight: 700;
+  font-size: var(--md);
+  margin-left: 1rem;
+}
+
+.contenedor__secundario--autor p {
+  color: var(--GrayishBlue);
+  font-size: var(--md);
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.contenedor__secundario--autor,
+.icons {
+  justify-items: end;
+  align-content: center;
 }
