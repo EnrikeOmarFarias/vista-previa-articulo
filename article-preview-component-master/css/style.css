@@ -78,6 +78,12 @@ html {
 
 .contenedor__secundario--autor {
   display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.contenedor__secundario--autor .profile {
+  display: flex;
 }
 
 .contenedor__secundario--autor img {
@@ -100,8 +106,12 @@ html {
   font-weight: 500;
 }
 
-.contenedor__secundario--autor,
-.icons {
-  justify-items: end;
-  align-content: center;
+.contenedor__secundario--autor .share {
+  display: none;
+}
+
+.contenedor__secundario--autor .share__icon {
+  background-color: var(--GrayishBlue);
+  cursor: pointer;
+  align-items: center;
 }
