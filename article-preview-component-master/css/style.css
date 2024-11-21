@@ -115,3 +115,35 @@ html {
   cursor: pointer;
   align-items: center;
 }
+
+/*--------MEDIA QUERYS---------*/
+
+@media (max-width: 800px) {
+  .conteiner__grid {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    max-width: 500px;
+    margin: 4rem auto;
+  }
+
+  .contenedor__principal--figure {
+    grid-column: 1;
+    height: 50%;
+  }
+
+  .contenedor__principal figure img {
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+  }
+
+  .contenedor__secundario {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .conteiner__grid {
+    max-width: 320px;
+  }
+}
