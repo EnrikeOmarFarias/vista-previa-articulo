@@ -34,10 +34,10 @@ html {
 .conteiner__grid {
   display: grid;
   max-width: 980px;
-  margin: auto;
   grid-template-columns: 1fr 2fr;
   height: 90vh;
   place-content: center;
+  margin: auto;
 }
 
 /*-----------IMG---------------*/
@@ -106,7 +106,7 @@ html {
   font-weight: 500;
 }
 
-.contenedor__secundario--autor .share {
+.contenedor__secundario--autor .icons .icons__compartir {
   display: none;
 }
 
@@ -114,6 +114,14 @@ html {
   background-color: var(--GrayishBlue);
   cursor: pointer;
   align-items: center;
+}
+
+.icons__compartir {
+  background-color: var(--VeryDarkGrayishBlue);
+  height: 2rem;
+  width: 3rem;
+  padding: 8px 12px;
+  font-size: var(--md);
 }
 
 /*--------MEDIA QUERYS---------*/
