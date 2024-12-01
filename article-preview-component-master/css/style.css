@@ -50,16 +50,14 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-radius: 1rem 0 0 1rem;
 }
 
 /*----------PARRAFOS -------------*/
 
 .contenedor__secundario {
   background-color: var(--white);
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-radius: 0 1rem 1rem;
   padding: 3rem 4rem;
 }
 
@@ -107,21 +105,36 @@ html {
 }
 
 .contenedor__secundario--autor .icons .icons__compartir {
-  display: none;
+  /*display: none;
+  */
 }
 
 .contenedor__secundario--autor .share__icon {
-  background-color: var(--GrayishBlue);
+  background-color: var(--VeryDarkGrayishBlue);
   cursor: pointer;
   align-items: center;
+  margin-right: 2rem;
 }
 
 .icons__compartir {
   background-color: var(--VeryDarkGrayishBlue);
-  height: 2rem;
-  width: 3rem;
-  padding: 8px 12px;
+  width: 20rem;
+  height: 6rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
   font-size: var(--md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  position: relative;
+  display: none;
+}
+
+.icons__compartir img {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
 }
 
 /*--------MEDIA QUERYS---------*/

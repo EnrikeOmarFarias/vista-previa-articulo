@@ -1,7 +1,8 @@
-function share() {
-  alert("compartir");
-}
-share();
+const contenedor = document.getElementById("conteiner");
 
-var compartir = document.getElementById("share_btn");
+contenedor.addEventListener("click", (e) => {
+  e.preventDefault();
+});
+
+var compartir = document.getElementById("share");
 share_btn.addEventListener("click", share);
